@@ -1,0 +1,35 @@
+<br><div class="container">
+    <div class="card-body">
+        <h1>Registrar Abonos</h1>
+       <form [formGroup]="fromabonos">
+            <div  class="row">
+            <div class="col-md-4">
+              <mat-form-field class="full-width-field">
+                <input matInput placeholder="Cliente" formControlName="idcliente" >
+              </mat-form-field>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-4">
+              <mat-form-field class="full-width-field">
+                <input matInput placeholder="Descripcion" formControlName="descripcion" >
+              </mat-form-field>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-md-4">
+          <mat-form-field class="full-width-field">
+            <input matInput placeholder="Precio" formControlName="montoabonado" >
+          </mat-form-field>
+        </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+          <button mat-raised-button type="submit" class="boton">Guardar</button>
+        </div>
+      </div><br>
+      </div>
+    </div>

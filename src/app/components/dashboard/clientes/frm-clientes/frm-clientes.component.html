@@ -1,0 +1,72 @@
+<br><mat-accordion  multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         Registrar Clientes
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+  <div class="container"><br>
+  
+    <div class="card-body">
+      
+       <h1>Registrar Clientes</h1>
+  
+       <form action="upload.php" method="POST" [formGroup]="frmclientes">
+   
+       <div class="row" >
+         <div class="col-md-4">
+           <mat-form-field class="full-width-field">
+             <input matInput placeholder="Nombre" formControlName="nombre" >
+           </mat-form-field>
+         </div>
+         <div class="col-md-4">
+           <mat-form-field class="full-width-field">
+             <input matInput placeholder="Telefono" formControlName="telefono" >
+           </mat-form-field>
+         </div>
+         <div  class="col-md-4">
+          <mat-form-field class="full-width-field">
+            <input matInput placeholder="Tel.Movil"  formControlName="telmovil" >
+          </mat-form-field>
+        </div>
+       </div>
+   <div class="row">
+     <div class="col-md-8">
+       <mat-form-field class="full-width-field">
+         <input matInput placeholder="Direccion" formControlName="direccion" >
+       </mat-form-field>
+     </div>
+     <div class="row">
+     <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Correo" formControlName="email" >
+      </mat-form-field>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <mat-form-field class="full-width-field">
+       <input matInput placeholder="RFC" formControlName="RFC" >
+     </mat-form-field>
+   </div>
+  </div>
+  </div>
+  <div class="row">
+    <div  class="col-md-6">
+      <input type="file" name="file" id="file" class="inputfile" />
+      <label   for="file">Subir foto</label>
+       </div>
+     </div>
+      </form><br>
+      <div class="row">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+          <button   mat-raised-button type="submit" class="boton">Guardar</button>
+        </div>
+       </div><br>
+    </div>
+    </div>       
+  </mat-expansion-panel>
+  </mat-accordion> 
+     

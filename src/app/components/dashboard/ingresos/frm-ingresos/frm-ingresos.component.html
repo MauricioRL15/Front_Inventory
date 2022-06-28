@@ -1,0 +1,94 @@
+
+<br><mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+       Registrar Ingresos
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="container"><br>
+<div class="card-body">
+  <h1>Registrar Ingresos</h1>
+
+  <form [formGroup]="formingresos">
+
+  <div class="row">
+    <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Numero de nota" formControlName="numerorecibo" >
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Descuento" formControlName="descuento" >
+      </mat-form-field>
+    </div>
+  </div>
+<div class="row">
+<div class="col-md-4">
+  <mat-form-field class="full-width-field">
+    <input matInput placeholder="Forma de pago" formControlName="formapago" >
+    <mat-select>
+      <mat-option value="one">Contado</mat-option>
+      <mat-option value="two">Credito</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="col-md-4">
+  <mat-form-field class="full-width-field">
+    <input matInput placeholder="Tipo de pago" formControlName="tipopago" >
+    <mat-select>
+      <mat-option value="one">Efectivo</mat-option>
+      <mat-option value="two">Transferencia</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="col-md-4">
+  <mat-form-field class="full-width-field">
+    <input matInput placeholder="Entrega" formControlName="tipoentrega" >
+    <mat-select>
+      <mat-option value="one">Mostrador</mat-option>
+      <mat-option value="two">Envio</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+</div>
+
+
+<p>Total:$0<p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Datos del Cliente" formControlName="Idcliente" >
+      </mat-form-field>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Datos del Producto" formControlName="idproducto" >
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Cantidad" formControlName="cantidad" >
+      </mat-form-field>
+    </div>
+  </div>
+  </form>
+
+  <div class="row">
+    <div class="col-md-10">
+    </div>
+    <div class="col-md-2">
+  <button   mat-raised-button type="submit" class="boton">Comprar</button>
+</div>
+</div><br>
+</div>
+               
+</div></mat-expansion-panel>
+</mat-accordion>  
+

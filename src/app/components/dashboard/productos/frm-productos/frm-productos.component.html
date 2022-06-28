@@ -1,0 +1,89 @@
+<br><mat-accordion  multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         Registrar Productos
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+  
+  <div class="container"><br>
+  
+    <div class="card-body">
+       <h1>Formulario de Productos</h1>
+  
+       <form action="upload.php" method="POST" [formGroup]="formproductos">
+  
+       <div class="row">
+         <div class="col-md-4">
+           <mat-form-field class="full-width-field">
+             <input matInput placeholder="Nombre" formControlName="nombre" >
+           </mat-form-field>
+         </div>
+         <div class="col-md-4">
+           <mat-form-field class="full-width-field">
+             <input matInput placeholder="Codigo" formControlName="codigo" >
+           </mat-form-field>
+         </div>
+         <div  class="col-md-4">
+          <mat-form-field class="full-width-field">
+            <input matInput placeholder="Existencia"  formControlName="existencia" >
+          </mat-form-field>
+        </div>
+       </div>
+   <div class="row">
+     <div class="col-md-4">
+       <mat-form-field class="full-width-field">
+         <input matInput placeholder="Unidad" formControlName="unidad" >
+         <mat-select>
+          <mat-option value="uno">kg</mat-option>
+          <mat-option value="dos">l</mat-option>
+          <mat-option value="tres">pz</mat-option>
+          <mat-option value="cuatro">m</mat-option>
+          <mat-option value="cinco">g</mat-option>
+        </mat-select>
+       </mat-form-field>
+     </div>
+     <div class="col-md-4">
+      <mat-form-field class="full-width-field">
+        <input matInput placeholder="Descripcion" formControlName="descripcion" >
+      </mat-form-field>
+    </div>
+   </div>
+     <div class="row">
+     <div class="col-md-4">
+       <mat-form-field class="full-width-field">
+         <input matInput placeholder="Precio" formControlName="precio" >
+       </mat-form-field>
+     </div>
+      <div class="col-md-4">
+        <mat-form-field class="full-width-field">
+          <input matInput placeholder="Precio al publico" formControlName="precioalpublico" >
+        </mat-form-field>
+      </div>
+      </div>
+      <div class="row">
+      <div  class="col-md-6">
+        <input type="file" name="file" id="file" class="inputfile" />
+        <label   for="file">Subir archivo</label>
+         </div>
+       </div>
+      </form><br>
+      <div class="row">
+        <div class="col-md-10">
+        </div>
+        <div class="col-md-2">
+          <button   mat-raised-button type="submit" class="boton">Guardar</button>
+        </div>
+        </div>
+       </div><br>
+      
+    </div>
+  
+  </mat-expansion-panel>
+  </mat-accordion>  
+          
+        
+      
+    
+   
+   

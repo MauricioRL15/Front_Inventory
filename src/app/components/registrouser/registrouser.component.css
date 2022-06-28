@@ -1,0 +1,14 @@
+.bg{
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/531/288/64/james-zwadlo-beach-doodle-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: cover;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
